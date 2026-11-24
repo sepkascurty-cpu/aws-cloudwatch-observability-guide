@@ -9,6 +9,10 @@
 
 ---
 
+## 🌍 In plain words — what is this, really?
+
+Think of CloudWatch as the control room of a large office building, with screens on the wall showing temperature gauges, security camera feeds, and a big red alarm panel. Instead of walking to every room to check whether something is wrong, you watch everything from one place and get called the moment a number looks dangerous. In a cloud system the "rooms" are your servers and applications, the gauges are metrics like CPU and response time, and the camera recordings are logs that show exactly what happened and when. CloudWatch collects all of that in one place, draws it on dashboards, and raises alarms that can message your team or even trigger an automatic fix. Traces add the final piece: they follow a single visitor's journey through the building, room by room, so you can see exactly where they got delayed. In short, observability means not guessing why a system is slow or broken, but having the numbers, records, and journey maps to prove it.
+
 ## Why CloudWatch Matters
 
 | Problem | Without CloudWatch | With CloudWatch |
@@ -144,14 +148,8 @@ python3 cloudwatch_demo.py --live --region ap-southeast-1
 aws-cloudwatch-observability-guide/
 ├── README.md                  # This guide
 ├── architecture.svg           # Classic AWS reference-style diagram
-├── cloudwatch_demo.py         # Metrics, logs, alarms + offline simulation
-└── quiz.md                    # 5 questions to test yourself
+└── cloudwatch_demo.py         # Metrics, logs, alarms + offline simulation
 ```
-
-## Quiz Teaser
-
-> **Q:** Your alarm fires every Monday at 09:00 when traffic spikes, and the team now ignores it. What's the *right* fix?
-> **A:** See [quiz.md](quiz.md) — and no, the answer is not "delete the alarm". 😉
 
 ---
 
